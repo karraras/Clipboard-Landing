@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --animation-direction: hsl(201, 11%, 66%);
+}
+body {
+  display: flex;
+  width: 100%;
+  height: 200vh;
+  background-color: var(--animation-direction);
+  justify-content: center;
+}
+p {
+  font-size: 9px;
+}
+.container {
+  background-repeat: no-repeat;
+  background-image: url(./images/bg-header-desktop.png);
+  background-color: white;
+  width: 35%;
+  /* width: 500px; */
+  text-align: center;
+  padding: 25px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  background-attachment: scroll;
+  background-position: 0px 0px;
+  overflow: hidden;
+}
+.container .heading {
+  /* width: 305px; */
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .heading img {
+  /* width: 45px; */
+  width: 35%;
+  margin-bottom: 10px;
+}
+
+/* the-font */
+.container .heading h1 {
+  margin-bottom: 10px;
+}
+.container .heading > p {
+  font-size: 9px;
+  margin-bottom: 10px;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.container .head {
+  padding-top: 10px;
+  display: flex;
+  color: white;
+  /* width: 270px; */
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .head p {
+  font-size: 9px;
+  padding: 10px 25px;
+  border-radius: 100px;
+}
+.container .head p:first-child {
+  background: var(--Strong-Cyan);
+  transition: all 0.3s ease;
+}
+.container .head p:last-child {
+  background: var(--Light-Blue);
+  transition: all 0.3s ease;
+}
+.container .head p:first-child:hover {
+  box-shadow: 0 5px 9px -4px var(--Strong-Cyan);
+  cursor: pointer;
+}
+.container .head p:last-child:hover {
+  box-shadow: 0 5px 9px -4px var(--Light-Blue);
+  cursor: pointer;
+}
+
+.container .inform {
+  width: 60%;
+  margin-top: 20px;
+}
+/* the-font */
+.container .inform h1 {
+  margin-bottom: 10px;
+}
+.container .inform p {
+  font-size: 9px;
+  margin-bottom: 10px;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.three-art {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.three-art .left-three {
+  /* width: 250px; */
+  width: 50%;
+  margin-left: -10px;
+}
+.three-art img {
+  width: 100%;
+}
+
+.three-art .one-three {
+  /* width: 200px; */
+  width: 40%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 170px;
+}
+.three-art .one-three .right-three {
+  margin-left: 20px;
+}
+
+.container .five-art {
+  /* width: 330px; */
+  width: 60%;
+}
+.container .five-art img {
+  width: 100%;
+}
+
+.container .seven-art {
+  margin-top: 20px;
+  display: flex;
+  /* width: 440px; */
+  width: 90%;
+  justify-content: space-between;
+}
+
+.container .seven-art img {
+  /* width: 30px; */
+  width: 20%;
+}
+.container h2 {
+  font-size: 15px;
+}
+
+.container .eight-art {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+}
+.container .eight-art img {
+  /* width: 90px; */
+  width: 20%;
+  height: 22px;
+}
+
+footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: #e0e0e0;
+}
+footer .left-fot {
+  display: flex;
+  align-items: center;
+  /* width: 250px; */
+  width: 50%;
+  justify-content: space-between;
+}
+footer .left-fot > p {
+  margin-top: -15px;
+  transition: all 0.3s ease;
+}
+footer .left-fot img {
+  /* width: 30px; */
+  width: 15%;
+}
+footer .one-fot p {
+  line-height: 15px;
+  transition: all 0.3s ease;
+}
+footer p:hover {
+  color: var(--Strong-Cyan);
+  cursor: pointer;
+}
+footer .right-fot img {
+  /* width: 15px; */
+  width: 15%;
+}
+footer .right-fot {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+footer .right-fot i {
+  font-size: 150%;
+  transition: all 0.3s ease;
+  color: var(--Dark-Grayish-Blue);
+}
+
+footer .right-fot i:hover {
+  color: var(--Strong-Cyan);
+  cursor: pointer;
+}
+
+/* the media query */
+
+@media (min-width: 375px) and (max-width: 678px) {
+  body {
+    height: 375vh;
+  }
+  .container {
+    background-image: url(./images/bg-header-mobile.png);
+    width: 80%;
+  }
+
+  .container .heading {
+    width: 305px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 176px;
+  }
+
+  .container .heading img {
+    width: 80px;
+  }
+
+  .container .head {
+    display: flex;
+    width: 200px;
+    height: 90px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container .head p {
+    font-size: 12px;
+    padding: 8px 25px;
+    border-radius: 100px;
+    width: 100%;
+  }
+
+  .container .inform {
+    width: 176px;
+  }
+
+  .three-art {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .three-art .left-three {
+    width: 250px;
+    margin-left: 0;
+  }
+  .three-art .one-three {
+    width: 100%;
+    text-align: center;
+    height: 220px;
+  }
+  .container h2 {
+    font-size: 18px;
+  }
+  .container .five-art {
+    width: 285px;
+  }
+  .container .seven-art {
+    width: 176px;
+    flex-direction: column;
+    height: 350px;
+  }
+  .container .seven-art img {
+    width: 50px;
+  }
+  .container .eight-art {
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+  }
+
+  footer {
+    height: 250px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  footer .left-fot {
+    height: 170px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  footer .left-fot img {
+    width: 40px;
+  }
+  footer .right-fot {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
